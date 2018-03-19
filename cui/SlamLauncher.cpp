@@ -70,7 +70,7 @@ void SlamLauncher::run() {
   while(true) {
 #ifdef _WIN32
     Sleep(1000);                            // WindowsではSleep
-#elif __linux__
+#else
     usleep(1000000);                        // Linuxではusleep
 #endif
   }
@@ -129,7 +129,7 @@ void SlamLauncher::showScans() {
     // 描画間隔をあける
 #ifdef _WIN32
     Sleep(100);                            // WindowsではSleep
-#elif __linux__
+#else
     usleep(100000);                        // Linuxではusleep
 #endif
 

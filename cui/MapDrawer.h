@@ -43,18 +43,19 @@ public:
   void initGnuplot() {
 #ifdef _WIN32
     gp = _popen("gnuplot", "w");      // パイプオープン.Windows
-#elif __linux__
+#else
     gp = popen("gnuplot", "w");       // パイプオープン.Linux
 #endif
   }
 
   void finishGnuplot() {
-    if (gp != nullptr)
+    if (gp != nullptr) {
 #ifdef _WIN32
       _pclose(gp);
-#elif __linux__
+#else
       pclose(gp);
 #endif
+    }
   }
 
   void setAspectRatio(double a) {

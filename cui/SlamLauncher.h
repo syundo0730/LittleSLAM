@@ -18,7 +18,7 @@
 #include <vector>
 #ifdef _WIN32
 #include <windows.h>
-#elif __linux__
+#else
 #include <unistd.h>
 #endif
 
