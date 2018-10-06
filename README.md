@@ -52,6 +52,8 @@ LittleSLAMの実行には、下記のソフトウェアが必要です。
 
 - Linuxでの使い方は[こちら](doc/install-linux.md)
 
+- Macでの使い方は[こちら](doc/install-mac.md)
+
 ## データセット
 
 実験用に6個のデータファイルを用意しています。下表に一覧を示します。
